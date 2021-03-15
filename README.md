@@ -1,2 +1,2 @@
 # PLC
-Study Code
+Study codes in computational language paradigms.
