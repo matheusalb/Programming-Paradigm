@@ -64,7 +64,7 @@ class Expressao {
 class Valor extends Expressao {
     protected int valor = 0;
     
-    Valor(int valor) {
+    public Valor(int valor) {
         this.valor = valor;
     }
 
@@ -82,7 +82,7 @@ class ExpressaoBinaria extends Expressao {
     protected Expressao primeiro = new Valor(0);
     protected Expressao segundo = new Valor(0);
 
-    ExpressaoBinaria(Expressao primeiro, Expressao segundo) {
+    public ExpressaoBinaria(Expressao primeiro, Expressao segundo) {
         // Os construtores são polimórficos, nesse exemplo, podemos passar valores do tipo expressão (não muito útil, nesse caso),
         // podemos passar valor do tipo Valor, pois por herança, todo Valor é uma Expressão.
         // Posso passar outra ExpressaoBinaria (também não muito util, nesse caso).
